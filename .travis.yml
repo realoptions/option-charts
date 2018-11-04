@@ -1,0 +1,16 @@
+language: node_js
+node_js:
+- '9'
+install:
+- npm install
+- npm test -- --coverage
+after_success:
+- bash <(curl -s https://codecov.io/bash)
+deploy:
+  provider: npm
+  email: danstahl1138@gmail.com
+  api_key:
+    secure: khvCczTKHD1UoRFlQQ/t2CIWVT6KizwRlkNloJK9bFH60kmmjyVBqkFon4cytbOJVwMta1yd8vHWvbaRIlgF+OuKI3et2mK890OLxb2B4TLFMweECJajO+LtjO8CTMl39syCbJewVe2XuG1B6NyqwM9jRpbberu1MjAPwnKm0/7H/ivGXM1NE9hw2Tbav4qFNSVflQDUOww4mBvdNIMvQIxO1vzj1yI5a9lEvE8gRuOZsusFTpPHMeGANi599zOMIPF60YRv38qD3geBWlbKfUkoc3c38qz3hBdGslrBBbaXPJyp4oE1ibJEGTq0rNy+0G7T/2of/eZxH/ZtfwnheQpiR9NWqSshqrf44+0jx4ye+M/LUZf+v/g61Eogblwg1Vaxoy/m8HX7nTdILV+vN8kxSfVqXBEhGHQLG4C4p2XcCZ4XeyWuDxqI66oVxj6YXUgIt6Fqh41IirpSiLTAQXdhjTZruQ4ug3dxQtI5crqhI3fnl5rUcGcS9CMtAjLTT0GWQrm8LQtVMFLCobL9WQz6Ke+6vvj3NPkfGrE+TNNbhts6ePoHtUKxMnun2K2w9PACZAbTIuzrN9K9WKXAPOaKtRWMgepIiPkmrdzFPcXWExM19QLj2v55ZuQXFpnRWRcmfuDbHLvdgGEAgHojKn+dg+0LPiIQJz20FfZ9BW0=
+  on:
+    tags: true
+    repo: realoptions/option-charts

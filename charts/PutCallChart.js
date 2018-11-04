@@ -38,7 +38,7 @@ const PutCallChart = ({
           centerTitle
           title="Calls and Puts"
           {...titleStyle}
-          data={legendData(primary, secondary)}
+          data={legendData(callColor, putColor)}
           orientation="horizontal"
         />
         <VictoryLine

@@ -19,13 +19,13 @@ export const getMax = (data, key) =>
   }, Number.NEGATIVE_INFINITY)
 
 //exported for testing
-export const getVaR = (riskMetrics, density) => [
+export const getVaR = (value_at_risk, density) => [
   {
-    x: -riskMetrics.value_at_risk,
+    x: -value_at_risk,
     y: 0
   },
   {
-    x: -riskMetrics.value_at_risk,
+    x: -value_at_risk,
     y: getMax(density, 'value')
   }
 ]
@@ -64,7 +64,7 @@ const DensityChart=({
         />
         <VictoryLine
           style={{ data: { stroke: varColor } }}
-          data={getVaR(riskMetrics, density)}
+          data={getVaR(value_at_risk, density)}
         />
       </VictoryChart>
     ) 
@@ -75,8 +75,8 @@ DensityChart.propTypes = {
         value: PropTypes.number.isRequired
         })
     ).isRequired,
-    value_at_risk: PropTypes.number,
-    expected_shortfall: PropTypes.number,
+    value_at_risk: PropTypes.number.isRequired,
+    expected_shortfall: PropTypes.number.isRequired,
     varColor:PropTypes.string.isRequired,
     densityColor:PropTypes.string.isRequired
 }

@@ -50,6 +50,6 @@ describe('getVaR', () => {
   it('returns array of x y object', () => {
     const arr = [{ value: 4 }, { value: 6 }]
     const expected = [{ x: -2, y: 0 }, { x: -2, y: 6 }]
-    expect(getVaR({ value_at_risk: 2 }, arr)).toEqual(expected)
+    expect(getVaR(2, arr)).toEqual(expected)
   })
 })
