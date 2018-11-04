@@ -1,0 +1,44 @@
+{
+  "name": "option-charts",
+  "version": "0.0.1",
+  "description": "Useful victory charts for options",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "./node_modules/.bin/babel charts --out-dir lib",
+    "prepublishOnly": "npm run build"
+  },
+  "browserslist": "> 0.25%, not dead",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/realoptions/option-charts.git"
+  },
+  "keywords": [
+    "Charts"
+  ],
+  "author": "Daniel Stahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/realoptions/option-charts/issues"
+  },
+  "homepage": "https://github.com/realoptions/option-charts#readme",
+  "dependencies": {
+    "victory": "^30.6.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./setupTests.js",
+    "rootDir": "charts"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "jest": "^23.6.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0"
+  }
+}
