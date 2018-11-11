@@ -12,7 +12,7 @@ import {
     DEFAULT_ANIMATE_STYLE, 
     CONTAINER_STYLE, 
     DEFAULT_TITLE_STYLE 
-} from './defaults'
+} from '../defaults'
 
 const legendData = (primary, secondary) => [
     { name: 'Call', symbol: { fill: primary } },

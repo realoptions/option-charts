@@ -1,11 +1,11 @@
 {
   "name": "option-charts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Useful victory charts for options",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "jest",
-    "build": "babel charts --out-dir lib",
+    "build": "babel src --out-dir build",
     "prepublishOnly": "npm run build"
   },
   "browserslist": "> 0.25%, not dead",
@@ -27,7 +27,7 @@
   },
   "jest": {
     "setupTestFrameworkScriptFile": "./setupTests.js",
-    "rootDir": "charts"
+    "rootDir": "tests"
   },
   "resolutions": {
     "babel-core": "7.0.0-bridge.0"

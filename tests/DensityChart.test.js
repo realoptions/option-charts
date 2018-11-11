@@ -1,5 +1,5 @@
 import React from 'react'
-import DensityChart, { getMax, getVaR } from './DensityChart'
+import DensityChart, { getMax, getVaR } from '../src/Density'
 
 import { shallow, mount } from 'enzyme'
 import { VictoryChart } from 'victory'

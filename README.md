@@ -10,5 +10,5 @@ Charts which are useful for displaying option prices, implied volatilities, and 
 Install: `npm install option-charts`
 
 ```javascript
-import DensityChart from 'option-charts/DensityChart'
+import DensityChart from 'option-charts/Density'
 ```

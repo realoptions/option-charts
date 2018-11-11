@@ -1,5 +1,5 @@
 import React from 'react'
-import ImpliedVolatilityChart from './IVChart'
+import ImpliedVolatilityChart from '../src/ImpliedVolatility'
 
 import { shallow, mount } from 'enzyme'
 import { VictoryChart } from 'victory'

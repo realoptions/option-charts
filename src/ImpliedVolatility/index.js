@@ -10,7 +10,7 @@ import {
     DEFAULT_ANIMATE_STYLE,
     DEFAULT_TITLE_STYLE,
     CONTAINER_STYLE
-} from './defaults'
+} from '../defaults'
 
 import PropTypes from 'prop-types'
 

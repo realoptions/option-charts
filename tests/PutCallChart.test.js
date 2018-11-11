@@ -1,5 +1,5 @@
 import React from 'react'
-import PutCallChart from './PutCallChart'
+import PutCallChart from '../src/PutCall'
 import { shallow, mount } from 'enzyme'
 import { VictoryChart, VictoryScatter } from 'victory'
 

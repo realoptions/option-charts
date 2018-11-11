@@ -1,6 +1,8 @@
-charts
+src
 coverage
 .babelrc
 .travis.yml
 babel.config.js
-setupTests.js
+tests
+build
+scripts
