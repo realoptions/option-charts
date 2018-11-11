@@ -1,1 +1,1 @@
-cp -r ./build/ ./
+cp -r ./build/* ./
