@@ -13,10 +13,10 @@ import {
 import PropTypes from 'prop-types'
 
 //exported for testing
-export const getMax = (data, key) =>
+export const getPositiveMax = (data, key) =>
   data.reduce((aggr, cur) => {
     return cur[key] > aggr ? cur[key] : aggr
-  }, Number.NEGATIVE_INFINITY)
+  }, 0)
 
 //exported for testing
 export const getVaR = (value_at_risk, density) => [
@@ -26,7 +26,7 @@ export const getVaR = (value_at_risk, density) => [
   },
   {
     x: -value_at_risk,
-    y: getMax(density, 'value')
+    y: getPositiveMax(density, 'value')
   }
 ]
 
