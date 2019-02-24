@@ -3,7 +3,8 @@ import {
   VictoryChart,
   VictoryLine,
   VictoryContainer,
-  VictoryLabel
+  VictoryLabel,
+  VictoryAxis
 } from 'victory'
 import {
     DEFAULT_ANIMATE_STYLE,
@@ -66,6 +67,7 @@ const DensityChart=({
           style={{ data: { stroke: varColor } }}
           data={getVaR(value_at_risk, density)}
         />
+        <VictoryAxis label='Log Asset Price'/>
       </VictoryChart>
     ) 
 DensityChart.propTypes = {
