@@ -4,7 +4,8 @@ import {
   VictoryLine,
   VictoryContainer,
   VictoryScatter,
-  VictoryLegend
+  VictoryLegend,
+  VictoryAxis
 } from 'victory'
 
 import PropTypes from 'prop-types'
@@ -64,6 +65,8 @@ const PutCallChart = ({
             y="price"
           />
         )}
+        <VictoryAxis crossAxis label='Strike Price'/>
+        <VictoryAxis dependentAxis crossAxis/>
       </VictoryChart>
     )
 }

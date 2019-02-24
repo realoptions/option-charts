@@ -11,4 +11,6 @@ Install: `npm install option-charts`
 
 ```javascript
 import DensityChart from 'option-charts/Density'
+import PutCall from 'option-charts/PutCall'
+import ImpliedVolatility from 'option-charts/ImpliedVolatility'
 ```
