@@ -31,7 +31,8 @@ const ImpliedVolatilityChart = ({
           interpolation="natural"
           y="iv"
         />
-        <VictoryAxis label='Strike Price'/>
+        <VictoryAxis label='Strike Price' crossAxis/>
+        <VictoryAxis dependentAxis crossAxis/>
       </VictoryChart>
 )
 

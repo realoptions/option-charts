@@ -65,7 +65,8 @@ const PutCallChart = ({
             y="price"
           />
         )}
-        <VictoryAxis label='Strike Price'/>
+        <VictoryAxis crossAxis label='Strike Price'/>
+        <VictoryAxis dependentAxis crossAxis/>
       </VictoryChart>
     )
 }

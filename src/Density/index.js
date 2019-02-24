@@ -67,7 +67,8 @@ const DensityChart=({
           style={{ data: { stroke: varColor } }}
           data={getVaR(value_at_risk, density)}
         />
-        <VictoryAxis label='Log Asset Price'/>
+        <VictoryAxis label='Log Asset Price' crossAxis/>
+        <VictoryAxis dependentAxis crossAxis/>
       </VictoryChart>
     ) 
 DensityChart.propTypes = {

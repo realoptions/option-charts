@@ -4,7 +4,8 @@
   "description": "Useful victory charts for options",
   "main": "./index.js",
   "scripts": {
-    "start": "cd demo && npm start",
+    "copy": "cp -r src/* demo/src/option-charts",
+    "start": "npm run copy && cd demo && npm start",
     "test": "jest",
     "build": "babel src --out-dir build",
     "prepublishOnly": "npm run build"
