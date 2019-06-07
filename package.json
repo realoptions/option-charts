@@ -1,6 +1,6 @@
 {
   "name": "option-charts",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Useful victory charts for options",
   "main": "./index.js",
   "scripts": {
