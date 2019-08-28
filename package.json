@@ -1,6 +1,6 @@
 {
   "name": "option-charts",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Useful victory charts for options",
   "main": "./index.js",
   "scripts": {
@@ -28,7 +28,9 @@
     "victory": "^30.6.0"
   },
   "jest": {
-    "setupFilesAfterEnv": ["./setupTests.js"],
+    "setupFilesAfterEnv": [
+      "./setupTests.js"
+    ],
     "rootDir": "tests"
   },
   "resolutions": {
