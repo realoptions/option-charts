@@ -4,8 +4,8 @@
 
 [lin-badge]: https://github.com/realoptions/option-charts/workflows/prerelease/badge.svg
 [lin-link]:  https://github.com/realoptions/option-charts/actions
-[cov-badge]: https://codecov.io/gh/phillyfan1138/option-charts/branch/master/graph/badge.svg
-[cov-link]:  https://codecov.io/gh/phillyfan1138/option-charts
+[cov-badge]: https://codecov.io/gh/realoptions/option-charts/branch/master/graph/badge.svg
+[cov-link]:  https://codecov.io/gh/realoptions/option-charts
 
 ## Charts
 
