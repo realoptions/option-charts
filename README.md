@@ -1,5 +1,11 @@
-[![Build Status](https://travis-ci.org/realoptions/option-charts.svg?branch=master)](https://travis-ci.org/realoptions/option-charts)
-[![codecov](https://codecov.io/gh/realoptions/option-charts/branch/master/graph/badge.svg)](https://codecov.io/gh/realoptions/option-charts)
+| [Linux][lin-link] |  [Codecov][cov-link]  |
+| :---------------: | :-------------------: |
+| ![lin-badge]      | ![cov-badge]          |
+
+[lin-badge]: https://github.com/realoptions/option-charts/workflows/prerelease/badge.svg
+[lin-link]:  https://github.com/realoptions/option-charts/actions
+[cov-badge]: https://codecov.io/gh/phillyfan1138/option-charts/branch/master/graph/badge.svg
+[cov-link]:  https://codecov.io/gh/phillyfan1138/option-charts
 
 ## Charts
 
