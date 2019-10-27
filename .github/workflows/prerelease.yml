@@ -9,12 +9,10 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v1
+            - name: test coverage
+              run: npm test 
             - name: Make prerelease to npm
               uses: epeli/npm-release@v1
               with:
                   type: prerelease
                   token: ${{ secrets.NPM_TOKEN }}
-            - name: test coverage
-              run: |
-                npm test -- --coverage
-                bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
