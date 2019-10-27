@@ -2,7 +2,7 @@
 | :---------------: | :-------------------: |
 | ![lin-badge]      | ![cov-badge]          |
 
-[lin-badge]: https://github.com/realoptions/option-charts/workflows/prerelease/badge.svg
+[lin-badge]: https://github.com/realoptions/option-charts/workflows/test/badge.svg
 [lin-link]:  https://github.com/realoptions/option-charts/actions
 [cov-badge]: https://codecov.io/gh/realoptions/option-charts/branch/master/graph/badge.svg
 [cov-link]:  https://codecov.io/gh/realoptions/option-charts
