@@ -8,5 +8,6 @@ jobs:
             - uses: actions/checkout@v1
             - name: test coverage
               run: |
+                npm ci
                 npm test -- --coverage
                 bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
