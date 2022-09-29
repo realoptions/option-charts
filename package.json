@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/realoptions/option-charts#readme",
   "dependencies": {
-    "victory": "^30.6.0"
+    "victory": "^36.6.8"
   },
   "jest": {
     "setupFilesAfterEnv": [
