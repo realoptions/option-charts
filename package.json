@@ -8,7 +8,7 @@
     "start": "npm run copy && cd demo && npm start",
     "test": "babel src -d dist/src && babel tests -d dist/tests && jest",
     "build": "babel src -d dist",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build && cp -r dist . && rm -r dist"
   },
   "browserslist": "> 0.25%, not dead",
   "repository": {
