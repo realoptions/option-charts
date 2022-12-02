@@ -8,13 +8,15 @@ jobs:
     prerelease:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v1
-            - name: test coverage
-              run: |
-                npm ci
-                npm test 
-            - name: Make prerelease to npm
-              uses: epeli/npm-release@v1
+            - uses: actions/checkout@v3
+            - uses: actions/setup-node@v3
               with:
-                  type: prerelease
-                  token: ${{ secrets.NPM_TOKEN }}
+                node-version: '16.x'
+                registry-url: 'https://registry.npmjs.org'
+            - run: |
+                npm ci
+                npm run build
+                npm version prerelease --preid=next
+            - run: npm publish dist --tag next
+              env:
+                NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
