@@ -1,27 +1,14 @@
 import React from 'react'
 import ImpliedVolatilityChart from '../src/ImpliedVolatility'
-
-import { shallow, mount } from 'enzyme'
-import { VictoryChart } from 'victory'
+import { render } from '@testing-library/react'
 
 describe('Render', () => {
   it('renders without error with density and not loading', () => {
-    shallow(
+    render(
       <ImpliedVolatilityChart
         impliedVolatility={[{ at_point: 5, iv: 5 }]}
         lineColor='#ffbf00'
       />
     )
-  })
-})
-describe('functionality', () => {
-  it('has chart if density exists', () => {
-    const impliedVolatilityChart = mount(
-      <ImpliedVolatilityChart
-        impliedVolatility={[{ at_point: 5, iv: 5 }]}
-        lineColor='#ffbf00'
-      />
-    )
-    expect(impliedVolatilityChart.find(VictoryChart).length).toEqual(1)
   })
 })

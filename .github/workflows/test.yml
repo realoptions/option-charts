@@ -5,9 +5,12 @@ jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v1
-            - name: test coverage
-              run: |
-                npm ci
-                npm test -- --coverage
-                bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
+          - uses: actions/checkout@v3
+          - uses: actions/setup-node@v3
+            with:
+              node-version: '16.x'
+          - name: test coverage
+            run: |
+              npm ci
+              npm test -- --coverage
+              bash <(curl -s https://codecov.io/bash) -t ${{ secrets.CODECOV_TOKEN }}
