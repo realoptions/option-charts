@@ -11,6 +11,9 @@
       "require": "./dist/option-charts.umd.cjs"
     }
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "cd demo && npm start",
     "test": "vitest run",
